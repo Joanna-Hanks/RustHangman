@@ -1,56 +1,12 @@
-   0.016787200s  INFO prepare_target{force=false package_id=hangman v0.1.0 (C:\Users\joann\Rust\hangman) target="hangman"}: cargo::core::compiler::fingerprint: fingerprint error for hangman v0.1.0 (C:\Users\joann\Rust\hangman)/Check { test: false }/TargetInner { name: "hangman", doc: true, ..: with_path("C:\\Users\\joann\\Rust\\hangman\\src\\main.rs", Edition2024) }
-   0.016826600s  INFO prepare_target{force=false package_id=hangman v0.1.0 (C:\Users\joann\Rust\hangman) target="hangman"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\joann\Rust\hangman\target\debug\.fingerprint\hangman-785c536683b35c50\bin-hangman`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_libgit2_prerelease
-  11: <unknown>
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: git_midx_writer_dump
-  16: git_filter_source_repo
-  17: git_midx_writer_dump
-  18: BaseThreadInitThunk
-  19: RtlUserThreadStart
-   0.028150500s  INFO prepare_target{force=false package_id=hangman v0.1.0 (C:\Users\joann\Rust\hangman) target="hangman"}: cargo::core::compiler::fingerprint: fingerprint error for hangman v0.1.0 (C:\Users\joann\Rust\hangman)/Check { test: true }/TargetInner { name: "hangman", doc: true, ..: with_path("C:\\Users\\joann\\Rust\\hangman\\src\\main.rs", Edition2024) }
-   0.028184300s  INFO prepare_target{force=false package_id=hangman v0.1.0 (C:\Users\joann\Rust\hangman) target="hangman"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\joann\Rust\hangman\target\debug\.fingerprint\hangman-2df072be2e30380d\test-bin-hangman`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_libgit2_prerelease
-  11: <unknown>
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: git_midx_writer_dump
-  16: git_filter_source_repo
-  17: git_midx_writer_dump
-  18: BaseThreadInitThunk
-  19: RtlUserThreadStart
+   0.016539600s  INFO prepare_target{force=false package_id=hangman v0.1.0 (C:\Users\joann\Rust\hangman) target="hangman"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\joann\\Rust\\hangman\\src\\main.rs"
+   0.016567500s  INFO prepare_target{force=false package_id=hangman v0.1.0 (C:\Users\joann\Rust\hangman) target="hangman"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\joann\\Rust\\hangman\\target\\debug\\.fingerprint\\hangman-785c536683b35c50\\dep-bin-hangman"
+   0.016574500s  INFO prepare_target{force=false package_id=hangman v0.1.0 (C:\Users\joann\Rust\hangman) target="hangman"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13435712278, nanos: 809198400 } < FileTime { seconds: 13435712612, nanos: 425647700 }
+   0.016788600s  INFO prepare_target{force=false package_id=hangman v0.1.0 (C:\Users\joann\Rust\hangman) target="hangman"}: cargo::core::compiler::fingerprint: fingerprint dirty for hangman v0.1.0 (C:\Users\joann\Rust\hangman)/Check { test: false }/TargetInner { name: "hangman", doc: true, ..: with_path("C:\\Users\\joann\\Rust\\hangman\\src\\main.rs", Edition2024) }
+   0.016812300s  INFO prepare_target{force=false package_id=hangman v0.1.0 (C:\Users\joann\Rust\hangman) target="hangman"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\joann\\Rust\\hangman\\target\\debug\\.fingerprint\\hangman-785c536683b35c50\\dep-bin-hangman", reference_mtime: FileTime { seconds: 13435712278, nanos: 809198400 }, stale: "C:\\Users\\joann\\Rust\\hangman\\src\\main.rs", stale_mtime: FileTime { seconds: 13435712612, nanos: 425647700 } }))
+   0.017568300s  INFO prepare_target{force=false package_id=hangman v0.1.0 (C:\Users\joann\Rust\hangman) target="hangman"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\joann\\Rust\\hangman\\src\\main.rs"
+   0.017580200s  INFO prepare_target{force=false package_id=hangman v0.1.0 (C:\Users\joann\Rust\hangman) target="hangman"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\joann\\Rust\\hangman\\target\\debug\\.fingerprint\\hangman-2df072be2e30380d\\dep-test-bin-hangman"
+   0.017585600s  INFO prepare_target{force=false package_id=hangman v0.1.0 (C:\Users\joann\Rust\hangman) target="hangman"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13435712278, nanos: 809198400 } < FileTime { seconds: 13435712612, nanos: 425647700 }
+   0.017762300s  INFO prepare_target{force=false package_id=hangman v0.1.0 (C:\Users\joann\Rust\hangman) target="hangman"}: cargo::core::compiler::fingerprint: fingerprint dirty for hangman v0.1.0 (C:\Users\joann\Rust\hangman)/Check { test: true }/TargetInner { name: "hangman", doc: true, ..: with_path("C:\\Users\\joann\\Rust\\hangman\\src\\main.rs", Edition2024) }
+   0.017777700s  INFO prepare_target{force=false package_id=hangman v0.1.0 (C:\Users\joann\Rust\hangman) target="hangman"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\joann\\Rust\\hangman\\target\\debug\\.fingerprint\\hangman-2df072be2e30380d\\dep-test-bin-hangman", reference_mtime: FileTime { seconds: 13435712278, nanos: 809198400 }, stale: "C:\\Users\\joann\\Rust\\hangman\\src\\main.rs", stale_mtime: FileTime { seconds: 13435712612, nanos: 425647700 } }))
     Checking hangman v0.1.0 (C:\Users\joann\Rust\hangman)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.16s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
